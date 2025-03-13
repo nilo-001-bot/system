@@ -1,0 +1,141 @@
+* { /* Resets margin and padding for all elements */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    font-family: 'Poppins', sans-serif; /* Sets the font for the entire document */
+    box-sizing: border-box; /* Includes padding and border in element's total width and height */
+}
+
+
+body{
+    background-image: url(../image7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.wrapper{
+    backdrop-filter: blur(70px);
+    width: 600px;
+    
+    margin-bottom: 400px;
+    border-radius: 30px;
+    border: 2px solid rgb(32, 87, 92);
+
+
+}
+
+.wrapper h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 45px;
+    margin-right: 100px;
+
+}
+
+.wrapper h2{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 30px;
+
+}
+
+.wrapper h2 img{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.row { /* Row for input and button */
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between items */
+    background: #edeef0; /* Light background for the row */
+    border-radius: 30px; /* Rounded corners */
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-left: 20px; /* Padding on the left */
+    margin-bottom: 25px; /* Space below the row */
+    width: 550px;
+}
+
+input { /* Input box styles */
+    flex: 1; /* Takes up remaining space */
+    border: none; /* No border */
+    outline: none; /* No outline on focus */
+    background: transparent; /* Transparent background */
+    padding: 10px; /* Padding inside the input */
+    font-weight: 14px; /* Font weight */
+}
+
+
+button { /* Button styles */
+    border: none; /* No border */
+    outline: none; /* No outline on focus */
+    padding: 16px 50px; /* Padding inside the button */
+    background: #ff5945; /* Background color of the button */
+    color: #fff; /* Text color */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 40px; /* Rounded corners */
+}
+
+ul li{
+    margin-left: 40px;
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none; 
+    cursor: pointer;
+    position: relative;
+}
+
+
+ul li::before { /* Pseudo-element for unchecked tasks */
+    content: ''; /* Empty content for the pseudo-element */
+    position: absolute; /* Absolute positioning */
+    height: 28px; /* Height of the circle */
+    width: 28px; /* Width of the circle */
+    border-radius: 50%; /* Circle shape */
+    background-image: url(../unchecked.jpg); /* Background image for unchecked tasks */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    top: 12px; /* Position from the top */
+    left: 8px; /* Position from the left */
+}
+
+ul li.checked { /* Styles for checked tasks */
+    color: #2b2828; /* Color for checked tasks */
+    text-decoration: line-through; /* Strikethrough for completed tasks */
+}
+
+ul li.checked::before { /* Pseudo-element for checked tasks */
+    background-image: url(../checked.jpg); /* Background image for checked tasks */
+}
+
+ul li span { /* Close button styles */
+    position: absolute; /* Absolute positioning */
+    right: 0; /* Position from the right */
+    top: 5px; /* Position from the top */
+    width: 40px; /* Width of the close button */
+    height: 40px; /* Height of the close button */
+    font-size: 22px; /* Font size for the close button */
+    color: #181717; /* Color for the close button */
+    line-height: 40px; /* Center text vertically */
+    text-align: center; /* Center text horizontally */
+    border-radius: 50%; /* Circle shape */
+    margin-right: 30px;
+}
+
+ul li span:hover { /* Close button hover effect */
+    background: #edeef0; /* Background color on hover */
+}

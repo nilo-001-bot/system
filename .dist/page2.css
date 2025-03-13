@@ -1,0 +1,61 @@
+body {
+    background-image: url("../image6.jpeg");
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 2rem;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+div {
+    border: 1px solid rgb(50, 117, 123);
+    padding: 15px 80px 30px 80px;
+    border-radius: 15%;
+    backdrop-filter: blur(50px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+div p {
+    font-size: 22px;
+    padding: 0px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 300px; /* Set all input fields to a fixed width */
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid rgb(50, 117, 123);
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+    border-color: rgb(30, 80, 85);
+}
+
+button {
+    background-color: rgb(50, 117, 123);
+    color: white;
+    padding: 15px 30px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px; /* Increase button text size */
+}
+
+button:hover {
+    background-color: rgb(30, 80, 85);
+}

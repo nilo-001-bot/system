@@ -1,0 +1,50 @@
+/* Body styles including background image and font settings */
+body {
+    background-image: url("../image3.png");
+    background-size: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 2rem;
+}
+
+/* Logo styles */
+.logo {
+    font-size: 75px;
+    font-weight: 400;
+    color: white;
+}
+
+/* Footer styles */
+#pquest {
+    font-size: 50px;
+    font-weight: 300;
+    color: white;
+    margin-top: 4rem;
+}
+
+/* Box styles for layout */
+.box {
+    display: flex;
+    align-items: center;
+    color: #ffff;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+/* Styles for the motivational message */
+#word {
+    font-size: 2.5rem;
+}
+
+/* Wrapper styles for layout */
+.wrapper {
+    margin-top: 19rem;
+}
+
+/* Button styles within boxes */
+.box a button {
+    text-decoration: none;
+    font-size: 2.8rem;
+    background-color: #1e73be;
+    border: 30px solid #1e73be;
+    border-radius: 20px;
+}
